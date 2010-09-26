@@ -93,8 +93,8 @@ public class Statistic implements Serializable {
             			String file = fileStr.substring(0,fileStr.lastIndexOf(":"));
             			s.setParentElement(file);
             		}
-            		s.setNcss(Long.valueOf(data.get(functionValueNames[1])));
-            		s.setCcn(Long.valueOf(data.get(functionValueNames[2])));
+            		s.setNcss(Long.valueOf(data.get(functionValueNames[1]).trim()));
+            		s.setCcn(Long.valueOf(data.get(functionValueNames[2]).trim()));
             		functionResults.add(s);
     			}
     			parser.next();
@@ -140,9 +140,9 @@ public class Statistic implements Serializable {
             			}
                     }
             		Statistic s = new Statistic(data.get("name"));
-            		s.setNcss(Long.valueOf(data.get(fileValueNames[1])));
-            		s.setCcn(Long.valueOf(data.get(fileValueNames[2])));
-            		s.setFunctions(Long.valueOf(data.get(fileValueNames[3])));
+            		s.setNcss(Long.valueOf(data.get(fileValueNames[1]).trim()));
+            		s.setCcn(Long.valueOf(data.get(fileValueNames[2]).trim()));
+            		s.setFunctions(Long.valueOf(data.get(fileValueNames[3]).trim()));
             		fileResults.add(s);
     			}
     			parser.next();
