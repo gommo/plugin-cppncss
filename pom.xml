@@ -10,7 +10,7 @@
 
     <artifactId>cppncss</artifactId>
     <packaging>hpi</packaging>
-    <version>1.1-SNAPSHOT</version>
+    <version>1.1-Tributech-SNAPSHOT</version>
     <name>Hudson CppNCSS plugin</name>
     <url>http://wiki.hudson-ci.org/pages/viewpage.action?pageId=42467768</url>
     <build>

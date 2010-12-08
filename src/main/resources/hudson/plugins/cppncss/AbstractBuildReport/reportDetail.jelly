@@ -18,6 +18,7 @@
 	                    <th align="left">${r.name.substring(0,r.name.indexOf(')') + 1)}</th>
 	                    <td align="right">${r.ncss}</td>
 	                    <td align="right">${r.ccn}</td>
+	                    <td align="right"></td>
 	                </tr>
                 </j:if>
             </j:forEach>
@@ -27,6 +28,7 @@
                 <th>Function</th>
                 <th title="Non-commenting Source Statements">NCSS</th>
                 <th title="Cyclomatic Complexity Number">CCN</th>
+                <th title="Average Cyclomatic Complexity">Average CCN</th>
             </tr>
         </thead>
         <tfoot>
@@ -34,6 +36,7 @@
                 <th align="left">Totals ${fcount}</th>
                 <th align="right">${ncsstotall}</th>
                 <th align="right">${ccntotall}</th>
+                <th align="right"></th>
             </tr>
         </tfoot>
     </table>
@@ -48,6 +51,7 @@
                 <th title="Function count">Functions</th>
                 <th title="Non-commenting Source Statements">NCSS</th>
                 <th title="Cyclomatic Complexity Number">CCN</th>
+                <th title="Average Cyclomatic Complexity">Average CCN</th>
             </tr>
         </thead>
         <tfoot>
@@ -56,6 +60,7 @@
                 <th align="right">${it.totals.fileTotal.functions}</th>
                 <th align="right">${it.totals.fileTotal.ncss}</th>
                 <th align="right">${it.totals.fileTotal.ccn}</th>
+                <th align="right"></th>
             </tr>
         </tfoot>
         <tbody>
@@ -65,6 +70,7 @@
                     <td align="right">${r.functions}</td>
                     <td align="right">${r.ncss}</td>
                     <td align="right">${r.ccn}</td>
+                    <td align="right"></td>
                 </tr>
             </j:forEach>
         </tbody>
